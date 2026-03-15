@@ -35,7 +35,7 @@ jobs:
 
       - name: Build
         working-directory: app
-        run: npm run build
+        run: npx vite build --base=/${{ github.event.repository.name }}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
