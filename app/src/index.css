@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-zinc-100 min-h-screen;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  input, textarea {
+    @apply bg-bg border border-[#2d2d35] rounded-md px-3 py-2 text-zinc-100 w-full
+           placeholder-zinc-500 focus:outline-none focus:border-indigo-500 transition-colors;
+  }
+
+  label {
+    @apply block text-sm font-medium text-zinc-300 mb-1;
+  }
+}
